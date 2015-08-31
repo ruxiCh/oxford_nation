@@ -1,4 +1,107 @@
-/*Colors
+/*
+Colors
 	orange: #f9bf3b sau #ff8c00
 	blue: #073976 
 *******************/
+
+/*
+General styles
+***************/
+body {
+	font-family: 'Open Sans', sans-serif; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather', serif;
+	font-weight: 800; 
+}
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?-dsb2b8');
+	src:url('../fonts/icomoon.eot?#iefix-dsb2b8') format('embedded-opentype'),
+		url('../fonts/icomoon.ttf?-dsb2b8') format('truetype'),
+		url('../fonts/icomoon.woff?-dsb2b8') format('woff'),
+		url('../fonts/icomoon.svg?-dsb2b8#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+}
+
+.icon-facebook3:before {
+    content: "\e600";
+}
+
+.icon-twitter3:before {
+    content: "\e601";
+}
+
+/*
+Header
+***************/
+nav li:nth-child(4) {
+	font-weight: 800; 
+}
+
+.navbar {
+	background: #f9bf3b; 
+}
+/*
+Intro 
+***************/
+.op {
+	margin-top: 60px;
+	height: 600px; 
+	background: linear-gradient(rgba(0,0,0, 0.2), rgba(0,0,0, 0.4)),
+		url('../img/574718_367250229978425_225953110_n.jpg') center no-repeat;
+	background-size: cover; 
+}
+
+.intro-headline {
+	position: relative;
+	top: 400px;
+	color: #eee;
+}
+
+.logo {
+	margin: 17px 0 0 17px;
+}
+
+.glyphicon-chevron-down {
+	font-size: 2.5em;
+	color: #eee;
+	width: 100%;
+	position: relative;
+	top: 510px;
+}
+
+.social-media li {
+	list-style: none;	
+	display: inline-block;
+	color: #eee; 
+	font-size: 2em; 
+}
+/*
+Mission
+***************/
+
+/*
+Features
+***************/
+
+/*
+Extra Content
+***************/
+
+/*
+Footer
+***************/
