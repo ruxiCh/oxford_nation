@@ -1,7 +1,8 @@
 /*
 Colors
-	orange: #f9bf3b sau #ff8c00
-	blue: #073976 
+	orange: #f9bf3b sau #ff8c00 sau #ff682e
+	blue: #073976
+	light blue: #c7d1ff or #b4c0c5
 *******************/
 
 /*
@@ -77,31 +78,153 @@ Intro
 }
 
 .glyphicon-chevron-down {
-	font-size: 2.5em;
+	font-size: 2.2em;
 	color: #eee;
 	width: 100%;
 	position: relative;
-	top: 510px;
+	top: 490px;
 }
 
+.social-media {
+	text-align: right;
+	padding-right: 25px; 
+}
 .social-media li {
 	list-style: none;	
 	display: inline-block;
 	color: #eee; 
-	font-size: 2em; 
-}
-/*
-Mission
-***************/
+	font-size: 2.3em;
+	text-decoration: none; 
+	color: #eee;
+	margin-top: 20px;
+	margin-right: 10px;
 
+}
+
+.social-media li a {
+		text-decoration: none; 
+	  color: #eee;	
+}
+
+
+/*
+Mission 
+***************/
+.mission {
+	margin: 0 0 20px;
+	height: 500px;
+	background: #c7d1ff;
+	color: #111;
+			text-align: center
+}
+
+.mission .container {
+	margin: 50px auto; 
+}
+
+
+.mission .lead {
+	margin-top: 30px;
+}
 /*
 Features
 ***************/
+.features {
+margin: 30px 0; 	
+}
+
+.features h1 {
+	text-align: center;
+	margin-bottom: 50px; 
+}
+
+.features .glyphicon {
+	font-size: 2.8em;
+	padding: 18px; 
+	border: 2px solid #444;
+	border-radius: 100%; 
+}
+
+.features .feature-title {
+	margin: 20px 0
+}
 
 /*
-Extra Content
+Extra Info
 ***************/
+.extra-info {
+	height: 85px; 
+	background: linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0, 0.7)), url('../img/Union-Jack_cropped.jpg') repeat-x;
+	background-position: center;
+	text-align: center;
+	margin: 70px 0; 
+}
+
+.extra-info .container-fluid {
+	margin: 0; 
+}
+.extra-info a {
+	text-decoration: none;
+	color: #eee;
+	display: block; 
+	padding: 9px;
+
+ }
+
+.extra-info h2 {
+	font-size: 1.8em;
+}
+
+/*
+Extra Info
+***************/
+.study-uk .jumbotron {
+	background: #c7d1ff;
+	color: #111;	
+}
+
+.study-uk h1 {
+	margin-bottom: 45px;
+}
 
 /*
 Footer
 ***************/
+
+footer {
+	background: #222;
+	color: #eee; 
+}
+
+footer .logo {
+	margin-left: 0; 
+}
+
+footer h4 {
+	margin: 20px 2px 10px 30px;
+	font-size: 1.5em;
+}
+
+footer ul {
+	list-style: none; 
+}
+
+footer ul li {
+	padding: 7px
+}
+
+footer ul li:nth-child(1) a {
+	color: #ff682e;  
+}
+
+footer ul li a {
+	padding: 7px 80px 7px 20px; 
+}
+
+footer .glyphicon {
+	margin-right: 5px;
+}
+
+footer h6 {
+	padding: 10px;
+}
