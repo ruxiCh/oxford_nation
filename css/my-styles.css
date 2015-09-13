@@ -127,9 +127,33 @@ Mission
 .mission {
 	margin: 0 0 20px;
 	height: 500px;
-	background: radial-gradient(circle, #eee, #c7d1ff);
+	background: radial-gradient(circle, #eee, #c7e0ff);
 	color: #111;
-			text-align: center
+  text-align: center;
+	position: relative;
+	overflow: hidden; 
+
+}
+
+.mission:before {
+	  content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.15;
+    background-image: url('../img/377924_288590567844392_425103436_n.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+	
 }
 
 .mission .container {
@@ -221,7 +245,7 @@ Extra Info
 Study UK
 ***************/
 .study-uk .jumbotron {
-	background: radial-gradient(circle, #eee, #c7d1ff);
+	background: radial-gradient(circle, #eee, #c7e0ff);
 	color: #111;	
 }
 
