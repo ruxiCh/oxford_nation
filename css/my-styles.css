@@ -144,7 +144,7 @@ Mission
     width: 100%;
     height: 100%;
     z-index: 1;
-    opacity: 0.15;
+    opacity: 0.13;
     background-image: url('../img/377924_288590567844392_425103436_n.jpg');
     background-repeat: no-repeat;
     background-position: 50% 0;
@@ -333,6 +333,15 @@ Media Queries
 		margin-bottom: 45px;
 		font-size: 1.3em;
 	}
+	footer .logo {
+			max-width: 340px;
+		  margin-bottom: 30px;
+	}
+	
+	footer .contact {
+			margin-left: 30px; 
+	}
+	
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
