@@ -66,6 +66,14 @@ nav li:nth-child(4) {
 	background: #9e4224;
 	color: #eee;
 }
+
+.navbar .nav li {
+	display: none; 
+}
+
+.nav li:nth-child(3) {
+	display: block; 
+}
 /*
 Intro 
 ***************/
@@ -120,7 +128,9 @@ Intro
 	  color: #eee;	
 }
 
-
+.intro-headline {
+	font-size: 1.5em; 
+}
 /*
 Mission 
 ***************/
@@ -157,9 +167,8 @@ Mission
 }
 
 .mission .container {
-	margin: 50px auto; 
+	margin: 20px auto 50px; 
 }
-
 
 .mission .lead {
 	margin-top: 30px;
@@ -242,6 +251,47 @@ Extra Info
 }
 
 /*
+Testimonials
+***************/
+
+.testimonials h1 {
+	text-align: center;
+	margin-bottom: 50px;
+	font-size: 4em; 
+}
+
+.testimonials .col-sm-6:first-child {
+	padding-right: 25px;
+	border-right: 1px solid #ff682e;
+}
+
+.testimonials .col-sm-6:nth-child(2) {
+	padding-left: 25px;
+}
+
+.testimonials .tst-entry {
+	padding-top: 25px;
+	padding-bottom: 25px;
+	border-bottom: 
+}
+
+.testimonials p {
+	text-align:justify;
+	font-size: 1.1em;
+	line-height: 1.4em;
+	
+}
+
+.testimonials h6 {
+	text-align: right;
+	margin-top: 20px;
+}
+
+.testimonials h6 a {
+	color: #073976;
+}
+
+/*
 Study UK
 ***************/
 .study-uk .jumbotron {
@@ -264,6 +314,10 @@ footer {
 
 footer .logo {
 	margin-left: 0; 
+}
+
+footer .contact {
+	margin-left: 40px; 
 }
 
 footer h4 {
@@ -300,31 +354,52 @@ Media Queries
 ***************/
 @media (max-width: 367px){
 	
+	.mission .container h1 {
+		font-size: 0.2em; 	
+	}
+	
 	.extra-info h2 {
 		position: relative;
 		bottom: 14px; 
 	}
 }
-@media (max-width: 489px) {
-	
-	.mission .container {
-		position: relative;
-		bottom: 74px;
-		
+
+@media (max-width: 489px) {   
+	.mission .container h1 {
+		font-size: 2em; 
 	}
 	
+	.mission .container p {
+		font-size: 1.2em;
+ 
+	}
+}
+
+@media (min-width: 456px) and (max-width: 620px) {
+	.extra-info h1 {
+		padding-top: 20px;	
+	}
+}
+
+@media (max-width: 620px) {   
+	
+	.intro-headline {
+		position: relative;
+		top: 360px;
+		text-align: right; 
+	}
 	.extra-info {
 		height: 140px; 	
 	}
 	
 	.extra-info h2 {
-		line-height: 1.7em;	
+		line-height: 1.3em;	
 
 	}
 	
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 	.mission {
 		height: 400px;	
 	}
@@ -332,6 +407,25 @@ Media Queries
 	.features .col-sm-4 {
 		margin-bottom: 45px;
 		font-size: 1.3em;
+	}
+	
+	.testimonials .col-sm-6:first-child {
+		border: none;	
+	}
+	
+	.testimonials .tst-entry {
+		padding-bottom: 14px;
+		margin: 10px 30px 40px;
+		border-radius: 13px;
+		border: 2px solid #444;;
+	}
+	
+	.testimonials p, .testimonials h6 {
+		padding: 0 25px
+	}
+	
+  .testimonials p {
+		font-size: 1.3em;	
 	}
 	footer .logo {
 			max-width: 340px;
@@ -345,8 +439,21 @@ Media Queries
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
+		
+		.intro-headline {
+			font-size: 1.6em;	
+		}
+		.mission h1 {
+			font-size: 4.1em; 	
+		}
 		.extra-info h2 {
 			position: relative;
 			bottom: 12px; 
 		}
+	
+	@media (min-width: 1000px) and (max-width: 3600px) {
+		.intro-headline {
+			font-size: 1.9em;	
+		}		
+	}
 }
