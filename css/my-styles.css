@@ -55,6 +55,7 @@ nav li:nth-child(4) {
 
 .navbar {
 	background: #fa6d32;
+	min-width: 100%;  
 }
 
 .navbar .nav li a {
@@ -72,7 +73,7 @@ nav li:nth-child(4) {
 }
 
 .nav li:nth-child(3) {
-	display: block; 
+	display: inline-block; 
 }
 /*
 Intro 
@@ -313,7 +314,7 @@ footer {
 }
 
 footer .logo {
-	margin-left: 0; 
+	margin-left: 0;
 }
 
 footer .contact {
@@ -362,6 +363,7 @@ Media Queries
 		position: relative;
 		bottom: 14px; 
 	}
+	
 }
 
 @media (max-width: 489px) {   
@@ -372,6 +374,13 @@ Media Queries
 	.mission .container p {
 		font-size: 1.2em;
  
+	}
+	
+	.tst-entry p {
+			text-align: center; 
+	}
+		footer .img-responsive {
+			width: 300px;  
 	}
 }
 
