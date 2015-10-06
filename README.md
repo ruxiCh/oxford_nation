@@ -9,4 +9,4 @@ Features:
 Features I want to implement:
 - an interactive map that shows where Oxford Nation's previous clients are studying now in the UK. 
 
-All sugestions are, of course, welcome :D. 
+You can see the live website at http://oxfordnation.ro/ . All sugestions are, of course, welcome :D. 
