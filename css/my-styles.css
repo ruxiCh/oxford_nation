@@ -72,7 +72,7 @@ nav li:nth-child(4) {
 	display: none; 
 }
 
-.nav li:nth-child(3) {
+.nav li:nth-child(3), .nav li:nth-child(4) {
 	display: inline-block; 
 }
 /*
@@ -251,6 +251,16 @@ Extra Info
 	font-size: 1.8em;
 }
 
+.glowy {
+
+    -webkit-transition:text-shadow 1s ease-in-out;
+    -moz-transition:text-shadow 1s ease-in-out;
+    -o-transition:text-shadow 1s ease-in-out;
+    -ms-transition:text-shadow 1s ease-in-out;
+    transition:text-shadow 1s ease-in-out; 
+	
+		text-shadow: 5px 5px 1.5em #eee, 5px -5px 1.5em #fff,  -5px 5px 1.5em #eee, -5px -5px 1.5em #fff;
+}
 /*
 Testimonials
 ***************/
