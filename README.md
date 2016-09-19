@@ -1,12 +1,4 @@
 # oxford_nation
-This is a website layout for a an educational counseling business for highschool students looking to study in the UK. The business belongs to some friends of mine, 
-and I figured it would be a good opportunity to do some practicing.  
+This is a website layout for a an educational counseling business for highschool students looking to study in the UK. It was my first functional website, and now I intend to pimp it up a bit, reflecting the growth of my skills.  
+ 
 
-Features:
-- uses Bootstrap 
-- uses CSS animations for the hover state of the feature icons
-
-Features I want to implement:
-- an interactive map that shows where Oxford Nation's previous clients are studying now in the UK. 
-
-You can see the live website at http://oxfordnation.ro/ . All sugestions are, of course, welcome :D. 
