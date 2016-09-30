@@ -19,7 +19,7 @@
 					</div>
 			</header>
 				<div class='main_screen'>
-						<div class='logo'></div>
+						<div class='logo_white'></div>
 						<div class="social_media">
 							<a href='https://www.facebook.com/oxfordnation'><span class='social_btn icon-facebook3'></span></a>
 							<a href='https://twitter.com/oxfordnation'><span class='social_btn icon-twitter3'></span></a>
@@ -36,7 +36,7 @@
 					</div>
 				</div>
 				<div class='features_section'>
-					<h1>Why choose Oxford Nation?</h1>
+					<h1 class="section_title">Why choose Oxford Nation?</h1>
 					<div class='features_container'>
 						<?php foreach($features as $v):?>
 						<div class='feature <?php echo $v["class"];?>'>
@@ -47,63 +47,53 @@
 						<?php endforeach;?>
 					</div>
 				</div>
-				<div class='cta options'>
+				<div class='cta_bar options'>
 					<a href='http://www.theguardian.com/education/ng-interactive/2015/may/25/university-league-tables-2016'>
 						<h4>Discover your options</h4>
 					</a>
 				</div>
 				<div class='testimonial_section'>
-					<div class="col"></div>
-					<div class="separating_line"></div>
-					<div class="col"></div>
-					<div class='container'>
-						<h1>What do our students say?</h1>
-						<div class='row'>
-							<div class='col-sm-6'>
-								<div class='tst-entry'>
-									<p></p>
-									<h6>Claudiu T. - <a href=''>University of Manchester</a></h6>
-									<div class='grey-border'></div>
+					<h1 class="section_title">What do our students say?</h1>
+					<div class="testimonial_container">
+						<div class="col">
+							<?php foreach($testimonials_first_col as $v):?>
+								<div class="testimonial">
+									<p class="testimonial_text"><?php echo $v["text"];?></p>
+									<h6 class="testimonial_author">
+										<?php echo $v["author"]?> - <a target="_blank" href="<?php echo $v["uni_link"]?>" class="author_uni"><?php echo $v["university"]?></a>
+									</h6>
 								</div>
-								<div class='tst-entry'>
-									<p></p>
-									<h6>Oana P. - <a href=''>University College London</a></h6>
+							<?php endforeach;?>
+						</div>
+						<div class="separating_line"></div>
+						<div class="col">
+							<?php foreach($testimonials_second_col as $v):?>
+								<div class="testimonial">
+									<p class="testimonial_text"><?php echo $v["text"];?></p>
+									<h6 class="testimonial_author">
+										<?php echo $v["author"]?> - <a target="_blank" href="<?php echo $v["uni_link"]?>" class="author_uni"><?php echo $v["university"]?></a>
+									</h6>
 								</div>
-							</div>
-							<div class='col-sm-6'>
-								<div class='tst-entry'>
-									<p></p>
-									<h6>Alex G. - <a href=''>University of Exeter</a></h6>
-								</div>
-								<div class='tst-entry'>
-									<p></p>
-									<h6>Mihai C. - <a href=''>University of Bristol</a></h6>
-								</div>
-							</div>
-							</div>							
+							<?php endforeach;?>
 						</div>
 					</div>
-					<div class='extra-info' id='contact-form'>
-						<div class='container fluid'>
-							<h2><a href='https://docs.google.com/forms/d/1lcBL9xiIStyQoEAu81rF-CFdA6ZMzZHcPwYRXnK9KJc/viewform?chromeless=1&edit_requested=true' class='visible-xs visible-sm'>Get in touch - Call us at 0722.922.903 or tap here and we'll contact you!</a></h2>
-							<h2><a href='https://docs.google.com/forms/d/1lcBL9xiIStyQoEAu81rF-CFdA6ZMzZHcPwYRXnK9KJc/viewform?chromeless=1&edit_requested=true' class='hidden-xs hidden-sm'>Get in touch - Call us at 0722.922.903 or click here and we'll contact you!</a></h2>
-						</div>
-					</div>
+				</div>
+				<div class='cta_bar contact'>
+					<a target="_blank" href='https://docs.google.com/forms/d/1lcBL9xiIStyQoEAu81rF-CFdA6ZMzZHcPwYRXnK9KJc/viewform?chromeless=1&edit_requested=true'>
+						<h4>Get in touch - Call us at 0722.922.903 or <span class="visible-xs visible-sm">tap</span> <span class="visible-md visible-lg">click</span> here and we'll contact you!</h4>
+					</a>
+				</div>
 				<footer>
-					<div class='container'>
-						<div class='row'>
-							<div class='col-sm-4 col-xs-offset-1'>
-								<img class='logo img-responsive' src='img/logo_492.png'>
-							</div>
-							<div class='contact col-sm-5'>
-								<h4>Contact</h4>
-							<ul>
-								<li><a href='tel:+40722922903 '><span class='glyphicon glyphicon-phone-alt'></span> 0722.922.903 </a></li>
-								<li><a href='mailto:contact@oxfordnation.ro'><span class='glyphicon glyphicon-envelope'></span> contact@oxfordnation.ro</a></li>							
-							</ul>
-									</div>
-								</div>
-						<h6>Copyright &copy 2015 Oxford Nation</h6>
+					<div class="logo_color"></div>
+					<div class="contact_list">
+						<div class="contact_item contact_phone">
+							<div class="contact_icon glyphicon glyphicon-phone-alt"></div>
+							<a href='tel:+40722922903'>0722.922.903</a>
+						</div>
+						<div class="contact_item contact_mail">
+							<div class="contact_icon glyphicon glyphicon-envelope"></div>
+							<a href='mailto:contact@oxfordnation.ro'>contact@oxfordnation.ro</a>
+						</div>
 					</div>
 				</footer>
 

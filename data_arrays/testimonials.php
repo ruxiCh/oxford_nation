@@ -42,9 +42,9 @@ $testimonials_second_col = array();
 
 foreach($testimonials as $k => $v) {
     if($k+1 <= $number_of_testimonials/2) {
-        $testimonials_first_col.push($v);
+        array_push($testimonials_first_col, $v);
     } else {
-        $testimonials_second_col.push($v);
+        array_push($testimonials_second_col, $v);
     }
 };
 ?>
