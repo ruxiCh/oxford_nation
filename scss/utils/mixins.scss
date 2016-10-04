@@ -1,0 +1,215 @@
+@mixin mobile{
+  @media (max-width: 767px ) {
+    @content;
+  }
+}
+
+@mixin mobile_or_tablet_portrait{
+  @media (max-width: 767px ), (max-device-width: 1024px) and (orientation: portrait) {
+    @content;
+  }
+}
+
+@mixin tablet{
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    @content;
+  }
+
+}
+
+@mixin large_desktop {
+  @media (min-width: 1601px) {
+    @content;
+  }
+}
+
+//min-device-width
+@mixin tablet-landscape {
+
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    @content;
+  }
+
+}
+
+@mixin tablet-portrait {
+
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    @content;
+  }
+
+}
+
+//Small devices (tablets, 768px and up)
+//Medium devices (big landscape tablets, laptops, and desktops, 992px and up)
+@mixin pc {
+  @media (min-width: 768px ) {
+    @content;
+  }
+}
+@mixin laptop {
+  @media (min-width: 1281px) and (max-width: 1440px) {
+    @content;
+  }
+}
+@mixin flex{
+  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox; /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Chrome */
+  display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+// Flex Flow Direction
+// - applies to: flex containers
+// row | row-reverse | column | column-reverse
+@mixin flex-direction($direction: row) {
+  -webkit-flex-direction: $direction;
+  -moz-flex-direction: $direction;
+  -ms-flex-direction: $direction;
+  flex-direction: $direction;
+}
+
+// Flex Line Wrapping
+// - applies to: flex containers
+// nowrap | wrap | wrap-reverse
+@mixin flex-wrap($wrap: nowrap) {
+  -webkit-flex-wrap: $wrap;
+  -moz-flex-wrap: $wrap;
+  -ms-flex-wrap: $wrap;
+  flex-wrap: $wrap;
+}
+
+// Flex Direction and Wrap
+// - applies to: flex containers
+// <flex-direction> || <flex-wrap>
+@mixin flex-flow($flow) {
+  -webkit-flex-flow: $flow;
+  -moz-flex-flow: $flow;
+  -ms-flex-flow: $flow;
+  flex-flow: $flow;
+}
+
+// Display Order
+// - applies to: flex items
+// <integer>
+@mixin flex-order($order: 0) {
+  -webkit-order: $order;
+  -moz-order: $order;
+  -ms-order: $order;
+  order: $order;
+}
+
+@mixin animation($arguments) {
+  -webkit-animation: $arguments;
+  -moz-animation: $arguments;
+  -o-animation: $arguments;
+  -ms-animation: $arguments;
+  animation: $arguments;
+}
+
+@mixin transition($arguments) {
+  -webkit-transition: $arguments;
+  -moz-transition: $arguments;
+  -o-transition: $arguments;
+  -ms-transition: $arguments;
+  transition: $arguments;
+}
+
+@mixin placeholder{
+
+  &::-webkit-input-placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+
+}
+
+@mixin linear-gradient($fallback_image, $direction_old, $direction_new, $first_color, $second_color) {
+  background-image: $fallback_image;
+  background-image: -webkit-linear-gradient($direction_old, $first_color, $second_color);
+  background-image: -moz-linear-gradient($direction_old, $first_color, $second_color);
+  background-image: -o-linear-gradient($direction_old, $first_color, $second_color);
+  background-image: linear-gradient($direction_new, $first_color, $second_color);
+  //ex direction_old: left
+  //ex direction_new: to right
+}
+
+@mixin box-shadow-hover() {
+  box-shadow: 0px -1px 7px rgba(0, 0, 0, 0.3);
+}
+
+@mixin box-shadow-hover($color) {
+  box-shadow: 0px -1px 7px $color;
+}
+
+/**
+* spinkit
+**/
+
+@mixin demo-howto-call-sk-spinner {
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  margin: 100px auto;
+  @include animation(sk-rotateplane 1.2s infinite ease-in-out);
+  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-rotateplane {
+  0% {
+    -webkit-transform: perspective(120px)
+  }
+  50% {
+    -webkit-transform: perspective(120px) rotateY(180deg)
+  }
+  100% {
+    -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg)
+  }
+}
+
+@keyframes sk-rotateplane {
+  0% {
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+  }
+  50% {
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+  }
+  100% {
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
+
+@keyframes btn-fontSize {
+  0% {
+    font-size: 10px;
+  }
+  50% {
+    font-size: 20px;
+
+  }
+  100% {
+    font-size: 10px;
+  }
+}
+
+@mixin bg_image($name, $folder) {
+  &.#{$name} {
+    background: url("${imgpath}/${folder}/${name}.png") no-repeat center/100%;
+  }
+}
+
+
+

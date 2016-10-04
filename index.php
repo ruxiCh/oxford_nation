@@ -5,19 +5,19 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href='https://fonts.googleapis.com/css?family=Merriweather|Open+Sans:400,800' rel='stylesheet' type='text/css'>
-		<link type='text/css' rel='stylesheet' href="css/style.css">
+		<link type='text/css' rel='stylesheet' href="css/styles.min.css">
 		<title>Oxford Nation | Study at the UK's top universities</title>
 	</head>
 	<body>
-			<header>
-					<div class="navbar">
-						<nav>
-							<h1 class='sr-only'>Oxford Nation</h1>
-							<h2 class="nav_link"><a target="_blank" href='http://ask.fm/OxfordNation'>Ask Us</a></h2>
-							<h2 class="nav_link bold"><a href='#contact-form'>Apply Now!</a></h2>
-						</nav>
-					</div>
-			</header>
+				<header>
+						<div class="navbar">
+							<nav>
+								<h1 class='sr-only'>Oxford Nation</h1>
+								<h2 class="nav_link"><a target="_blank" href='http://ask.fm/OxfordNation'>Ask Us</a></h2>
+								<h2 class="nav_link bold"><a href='#contact-form'>Apply Now!</a></h2>
+							</nav>
+						</div>
+				</header>
 				<div class='main_screen'>
 						<div class='logo_white'></div>
 						<div class="social_media">

@@ -1,0 +1,201 @@
+//Calculated to a 1920px width
+
+@mixin font-s200 {
+  font-size: 200px;
+  font-size: 10.41vw;
+  @include mobile{
+    font-size: 200px;
+    font-size: 20.83vw ;
+  };
+}
+
+@mixin font-s90  {
+  font-size: 90px;
+  font-size: 4.68vw;
+  @include mobile{
+    font-size: 90px;
+    font-size: 9.50vw;
+  };
+}
+
+@mixin font-s80 {
+  font-size: 80px;
+  font-size: 4.16vw;
+  @include mobile{
+    font-size: 80px;
+    font-size: 6.50vw;
+  };
+}
+
+
+@mixin font-s62 {
+  font-size: 62px;
+  font-size: 3.22vw;
+  @include mobile{
+    font-size: 62px;
+    font-size: 6.60vw;
+  };
+}
+
+@mixin font-s60 {
+  font-size: 60px;
+  font-size: 3.02vw;
+  @include mobile{
+    font-size: 60px;
+    font-size: 6.80vw;
+  };
+}
+
+@mixin font-s55 {
+  font-size: 55px;
+  font-size: 2.86vw;
+  @include mobile{
+    font-size: 55px;
+    font-size: 5.90vw;
+  };
+}
+
+@mixin font-s50 {
+  font-size: 50px;
+  font-size: 2.60vw;
+  @include mobile{
+    font-size: 50px;
+    font-size: 4.90vw;
+  };
+}
+
+@mixin font-s45 {
+  font-size: 45px;
+  font-size: 2.34vw;
+  @include mobile{
+    font-size: 45px;
+    font-size: 4.68vw;
+  };
+}
+
+@mixin font-s43 {
+  font-size: 43px;
+  font-size: 2.23vw;
+  @include mobile{
+    font-size: 43px;
+    font-size: 4.47vw;
+  };
+}
+
+@mixin font-s40 {
+  font-size: 40px;
+  font-size: 2.08vw;
+  @include mobile{
+    font-size: 40px;
+    font-size: 4.40vw;
+  };
+}
+
+@mixin font-s37 {
+  font-size: 37px;
+  font-size: 1.92vw;
+  @include mobile{
+    font-size: 37px;
+    font-size: 3.82vw;
+  };
+}
+
+@mixin font-s35 {
+  font-size: 35px;
+  font-size: 1.82vw;
+  @include mobile{
+    font-size: 35px;
+    font-size: 3.32vw;
+  };
+}
+
+@mixin font-s30 {
+  font-size: 30px;
+  font-size: 1.56vw;
+  @include mobile{
+    font-size: 30px;
+    font-size: 3.72vw;
+  };
+}
+
+@mixin font-s28 {
+  font-size: 28px;
+  font-size: 1.45vw;
+  @include mobile{
+    font-size: 28px;
+    font-size: 3.12vw;
+  };
+}
+
+@mixin font-s26 {
+  font-size: 26px;
+  font-size: 1.35vw;
+  @include mobile{
+    font-size: 26px;
+    font-size: 3.8vw;
+  };
+}
+
+@mixin font-s24 {
+  font-size: 24px;
+  font-size: 1.25vw;
+  @include mobile{
+    font-size: 24px;
+    font-size: 3.7vw;
+  };
+}
+
+@mixin font-s22 {
+  font-size: 22px;
+  font-size: 1.14vw;
+  @include mobile{
+    font-size: 22px;
+    font-size: 3.47vw;
+  };
+}
+
+@mixin font-s20 {
+  font-size: 20px;
+  font-size: 1.04vw;
+  @include mobile{
+    font-size: 20px;
+    font-size: 2.98vw;
+  };
+}
+
+@mixin font-s19 {
+  font-size: 19px;
+  font-size: 0.98vw;
+  @include mobile{
+    font-size: 19px;
+    font-size: 2.78vw;
+  };
+}
+
+@mixin font-s16 {
+  font-size: 16px;
+  font-size: 0.83vw;
+  @include mobile{
+    font-size: 16px;
+    font-size: 3.95vw;
+  };
+}
+
+@mixin font-s14 {
+  font-size: 14px;
+  font-size: 0.73vw;
+  @include mobile{
+    font-size: 14px;
+    font-size: 3.95vw;
+  };
+}
+
+
+@mixin font-s13 {
+  font-size: 13px;
+  font-size: 0.67vw;
+  @include mobile{
+    font-size: 13px;
+    font-size: 2.55vw;
+  };
+}

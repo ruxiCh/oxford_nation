@@ -1,0 +1,27 @@
+{
+  "name": "oxford_nation",
+  "version": "1.0.0",
+  "description": "This is a website layout for a an educational counseling business for highschool students looking to study in the UK. It was my first functional website, and now I intend to <del>pimp it up</del> refactor it a bit, reflecting the growth of my skills.",
+  "main": "index.php",
+  "dependencies": {},
+  "devDependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "grunt": "^1.0.1",
+    "grunt-contrib-cssmin": "^1.0.2",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ruxiCh/oxford_nation.git"
+  },
+  "author": "Ruxandra Chirea",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/ruxiCh/oxford_nation/issues"
+  },
+  "homepage": "https://github.com/ruxiCh/oxford_nation#readme"
+}
