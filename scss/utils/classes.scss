@@ -1,0 +1,18 @@
+.sr-only {
+  position: absolute;
+  left: 10000px;
+  overflow: hidden ;
+}
+
+.visible-mob {
+  display: none;
+  @include mobile {
+    display: block;
+  }
+}
+
+.hidden-mob {
+  @include mobile {
+    display: none ;
+  }
+}

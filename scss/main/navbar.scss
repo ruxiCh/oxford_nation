@@ -1,0 +1,36 @@
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  background-color: darken($orange, 10%);
+  padding: 1% 0;
+  @include mobile {
+    padding: 4% 0;
+  }
+  nav {
+    width: 21%;
+    margin: 0 0 0 74%;
+    @include mobile {
+      width: 66%;
+      margin-left: 30%;
+    }
+    .nav_link {
+      display: inline-block;
+      margin: 0 10% 0 0;
+      font-family: 'Open Sans' ;
+      color: white;
+      @include font-s24;
+      text-decoration: none;
+      &.nth-child {
+        margin: 0;
+      }
+      &:hover {
+        text-decoration: underline;
+      }
+      &.bold {
+        font-weight: 800;
+      }
+    }
+  }
+}

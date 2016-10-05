@@ -1,0 +1,76 @@
+#main_screen {
+  width: 100%;
+  background: url("#{$img_path}/bg_main_screen.jpg") no-repeat center/100%;
+  padding: 2% 0;
+  position: relative;
+  @include mobile {
+    padding: 4% 0;
+  }
+  .overlay {
+    background-color: black;
+    opacity: 0.45;
+    z-index: 1;
+  }
+  .row, .mission_statement, .arrow_down {
+    position: relative;
+    z-index: 2;
+  }
+  .row {
+    width: 95%;
+    margin: 0 auto 36%;
+    font-size: 0;
+    @include mobile {
+      width: 90%;
+    }
+  }
+  .logo_white,.social_media {
+    display: inline-block;
+    vertical-align: middle;
+    @include mobile {
+      vertical-align: top;
+    }
+  }
+  .logo_white {
+    width: 24%;
+    margin: 0 65% 0 0;
+    background: url("#{$img_path}/logo_white.png") no-repeat center/100%;
+    padding-top: 5%;
+    @include mobile {
+      width: 42%;
+      padding-top: 8%;
+      margin-right: 48%;
+    }
+
+  }
+  .social_media {
+    width: 9%;
+    margin: 0;
+    a {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 15% 0 0;
+      text-decoration:none;
+      @include mobile {
+        margin: 0 0 23%;
+      }
+      &:last-child {
+        margin: 0;
+      }
+    }
+    .social_btn {
+      color: #eee;
+      @include font-s50;
+      &:hover {
+        color: grey;
+      }
+    }
+  }
+  .mission_statement {
+    width: 90%;
+    margin: 0 auto;
+    text-align: right;
+    font-family: Merriweather;
+    color: #eee;
+    @include font-s35;
+  }
+}

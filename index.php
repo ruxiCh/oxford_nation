@@ -10,24 +10,25 @@
 	</head>
 	<body>
 				<header>
-						<div class="navbar">
-							<nav>
-								<h1 class='sr-only'>Oxford Nation</h1>
-								<h2 class="nav_link"><a target="_blank" href='http://ask.fm/OxfordNation'>Ask Us</a></h2>
-								<h2 class="nav_link bold"><a href='#contact-form'>Apply Now!</a></h2>
-							</nav>
-						</div>
+						<h1 class='sr-only'>Oxford Nation</h1>
+                        <nav>
+                            <a class="nav_link" target="_blank" href='http://ask.fm/OxfordNation'>Ask Us</a>
+                            <a class="nav_link bold" href='#contact-form'>Apply Now!</a>
+                        </nav>
 				</header>
-				<div class='main_screen'>
-						<div class='logo_white'></div>
-						<div class="social_media">
-							<a href='https://www.facebook.com/oxfordnation'><span class='social_btn icon-facebook3'></span></a>
-							<a href='https://twitter.com/oxfordnation'><span class='social_btn icon-twitter3'></span></a>
+				<div id='main_screen'>
+						<div class="overlay"></div>
+						<div class="row">
+							<div class='logo_white'></div>
+							<div class="social_media">
+								<a href='https://www.facebook.com/oxfordnation'><span class='social_btn icon-facebook3'></span></a>
+								<a href='https://twitter.com/oxfordnation'><span class='social_btn icon-twitter3'></span></a>
+							</div>
 						</div>
 						<h3 class="mission_statement">We help students gain admission at the best universities in the UK</h3>
-						<div class="arrow_down glyphicon glyphicon-chevron-down"></div>
 				</div>
-				<div class='intro_text_section'>
+				<div id='intro_text_section'>
+					<div class="overlay"></div>
 					<div class='intro_text'>
 						<h1>Since we started, 100% of our students were admitted to a top 10 UK university</h1>
 						<p>We are a small team of graduates from top UK universities: Oxford, Cambridge, and Exeter. We help students with all stages of
@@ -35,7 +36,7 @@
 						</p>
 					</div>
 				</div>
-				<div class='features_section'>
+				<div id='features_section'>
 					<h1 class="section_title">Why choose Oxford Nation?</h1>
 					<div class='features_container'>
 						<?php foreach($features as $v):?>
@@ -52,7 +53,7 @@
 						<h4>Discover your options</h4>
 					</a>
 				</div>
-				<div class='testimonial_section'>
+				<div id='testimonial_section'>
 					<h1 class="section_title">What do our students say?</h1>
 					<div class="testimonial_container">
 						<div class="col">
@@ -96,9 +97,5 @@
 						</div>
 					</div>
 				</footer>
-
-		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		 <script src="js/bootstrap.min.js"></script>
-		 <script src="js/script.js"></script>
 		</body>
 	</html>
