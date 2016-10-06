@@ -1,0 +1,26 @@
+@mixin font-s50 {
+  font-size: 50px;
+  font-size: 2.60vw;
+  @include mobile{
+    font-size: 50px;
+    font-size: 4.90vw;
+  };
+}
+
+@mixin font-s35 {
+  font-size: 35px;
+  font-size: 1.82vw;
+  @include mobile{
+    font-size: 35px;
+    font-size: 3.32vw;
+  };
+}
+
+@mixin font-s24 {
+  font-size: 24px;
+  font-size: 1.25vw;
+  @include mobile{
+    font-size: 24px;
+    font-size: 3.7vw;
+  };
+}

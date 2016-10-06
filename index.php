@@ -26,6 +26,7 @@
 							</div>
 						</div>
 						<h3 class="mission_statement">We help students gain admission at the best universities in the UK</h3>
+						<div class="glyphicon glyphicon-chevron-down"></div>
 				</div>
 				<div id='intro_text_section'>
 					<div class="overlay"></div>

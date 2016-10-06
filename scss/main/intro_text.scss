@@ -1,0 +1,37 @@
+#intro_text_section {
+  width: 100%;
+  margin: 0;
+  position: relative;
+  padding: 7% 0;
+  .overlay {
+    background: url("#{$img_path}/bg_intro_text.jpg") no-repeat center/100%;
+    opacity: 0.2;
+  }
+  .intro_text {
+    width: 72%;
+    margin: 0 auto;
+    color: #222;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    @include mobile {
+      width: 93%;
+    }
+    h1{
+      margin: 0 0 4%;
+      font-family: 'Merriweather';
+      @include font-s62;
+      @include mobile {
+        @include font-s50;
+      }
+    }
+    p {
+      margin: 0;
+      font-family: "Open Sans";
+      @include font-s26;
+      @include mobile {
+        @include font-s22;
+      }
+    }
+  }
+}

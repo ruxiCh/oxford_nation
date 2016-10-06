@@ -1,5 +1,6 @@
 #main_screen {
   width: 100%;
+  margin: 0;
   background: url("#{$img_path}/bg_main_screen.jpg") no-repeat center/100%;
   padding: 2% 0;
   position: relative;
@@ -11,13 +12,13 @@
     opacity: 0.45;
     z-index: 1;
   }
-  .row, .mission_statement, .arrow_down {
+  .row, .mission_statement, .arrow_down, .glyphicon-chevron-down {
     position: relative;
     z-index: 2;
   }
   .row {
     width: 95%;
-    margin: 0 auto 36%;
+    margin: 0 auto 30%;
     font-size: 0;
     @include mobile {
       width: 90%;
@@ -42,6 +43,9 @@
     }
 
   }
+  .social_media a, .mission_statement, .glyphicon-chevron-down {
+    color: #eee;
+  }
   .social_media {
     width: 9%;
     margin: 0;
@@ -58,7 +62,6 @@
       }
     }
     .social_btn {
-      color: #eee;
       @include font-s50;
       &:hover {
         color: grey;
@@ -67,10 +70,14 @@
   }
   .mission_statement {
     width: 90%;
-    margin: 0 auto;
+    margin: 0 auto 5%;
     text-align: right;
     font-family: Merriweather;
-    color: #eee;
     @include font-s35;
+  }
+  .glyphicon-chevron-down {
+    width: 100%;
+    @include font-s50;
+    text-align: center;
   }
 }

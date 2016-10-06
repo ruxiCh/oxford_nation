@@ -1,0 +1,87 @@
+$feature_icon_size: 5vw;
+$feature_icon_enlarged_size: 8vw;
+@keyframes roll-and-enlarge {
+  50% {
+    width: $feature_icon_enlarged_size;
+    height: $feature_icon_enlarged_size;
+    line-height: $feature_icon_enlarged_size;
+    @include font-s55;
+  }
+  100% {
+    width: $feature_icon_size;
+    height: $feature_icon_size;
+    transform: rotate(360deg);
+    line-height: $feature_icon_size;
+    @include font-s45;
+  }
+}
+
+#features_section {
+  width: 100%;
+  margin: 0;
+  color: #222;
+  text-align: center;
+  padding: 3% 0;
+  @include mobile {
+    padding: 6% 0;
+  }
+  .section_title {
+    margin: 0 0 3%;
+    @include mobile {
+      margin-bottom: 6%;
+    }
+  }
+  .features_container {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+    }
+    .feature {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @include mobile {
+        width: 80%;
+        margin: 0 0 5vw;
+      }
+      .glyphicon {
+        width: $feature_icon_size;
+        height: $feature_icon_size;
+        margin: 0 0 2.5vw;
+        border: 2px solid;
+        border-radius: 50%;
+        line-height:$feature_icon_size;
+        @include font-s45;
+        @include mobile {
+          width: $feature_icon_size * 3;
+          height: $feature_icon_size * 3;
+          line-height: $feature_icon_size * 3;
+          @include font-s62;
+        }
+        &:hover {
+          @include animation(roll-and-enlarge 2s);
+          @include mobile {
+            @include animation(none);
+          }
+        }
+      }
+      .feature_title {
+        font-family:Merriweather, serif;
+        margin: 0 0 1vw;
+        @include font-s30;
+      }
+      .feature_text {
+        font-family: "Open Sans", sans-serif;
+        @include font-s24;
+        margin: 0;
+      }
+    }
+  }
+
+}

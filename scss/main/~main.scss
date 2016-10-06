@@ -11,7 +11,7 @@ body {
   margin: 0;
   padding-top: 4%;
   @include mobile {
-    padding-top: 13%;
+    padding-top: 9%;
   }
 }
 .overlay {
@@ -20,5 +20,12 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.section_title {
+  width: 100%;
+  font-family: 'Merriweather', serif;
+  @include font-s30;
+
 }
 

@@ -1144,7 +1144,7 @@ header {
   @media (max-width: 767px) {
     /* line 1, ../scss/main/navbar.scss */
     header {
-      padding: 4% 0; } }
+      padding: 2% 0; } }
   /* line 11, ../scss/main/navbar.scss */
   header nav {
     width: 21%;
@@ -1181,6 +1181,7 @@ header {
 /* line 1, ../scss/main/main_screen.scss */
 #main_screen {
   width: 100%;
+  margin: 0;
   background: url("../img//bg_main_screen.jpg") no-repeat center/100%;
   padding: 2% 0;
   position: relative; }
@@ -1188,88 +1189,294 @@ header {
     /* line 1, ../scss/main/main_screen.scss */
     #main_screen {
       padding: 4% 0; } }
-  /* line 9, ../scss/main/main_screen.scss */
+  /* line 10, ../scss/main/main_screen.scss */
   #main_screen .overlay {
     background-color: black;
     opacity: 0.45;
     z-index: 1; }
-  /* line 14, ../scss/main/main_screen.scss */
-  #main_screen .row, #main_screen .mission_statement, #main_screen .arrow_down {
+  /* line 15, ../scss/main/main_screen.scss */
+  #main_screen .row, #main_screen .mission_statement, #main_screen .arrow_down, #main_screen .glyphicon-chevron-down {
     position: relative;
     z-index: 2; }
-  /* line 18, ../scss/main/main_screen.scss */
+  /* line 19, ../scss/main/main_screen.scss */
   #main_screen .row {
     width: 95%;
-    margin: 0 auto 36%;
+    margin: 0 auto 30%;
     font-size: 0; }
     @media (max-width: 767px) {
-      /* line 18, ../scss/main/main_screen.scss */
+      /* line 19, ../scss/main/main_screen.scss */
       #main_screen .row {
         width: 90%; } }
-  /* line 26, ../scss/main/main_screen.scss */
+  /* line 27, ../scss/main/main_screen.scss */
   #main_screen .logo_white, #main_screen .social_media {
     display: inline-block;
     vertical-align: middle; }
     @media (max-width: 767px) {
-      /* line 26, ../scss/main/main_screen.scss */
+      /* line 27, ../scss/main/main_screen.scss */
       #main_screen .logo_white, #main_screen .social_media {
         vertical-align: top; } }
-  /* line 33, ../scss/main/main_screen.scss */
+  /* line 34, ../scss/main/main_screen.scss */
   #main_screen .logo_white {
     width: 24%;
     margin: 0 65% 0 0;
     background: url("../img//logo_white.png") no-repeat center/100%;
     padding-top: 5%; }
     @media (max-width: 767px) {
-      /* line 33, ../scss/main/main_screen.scss */
+      /* line 34, ../scss/main/main_screen.scss */
       #main_screen .logo_white {
         width: 42%;
         padding-top: 8%;
         margin-right: 48%; } }
-  /* line 45, ../scss/main/main_screen.scss */
+  /* line 46, ../scss/main/main_screen.scss */
+  #main_screen .social_media a, #main_screen .mission_statement, #main_screen .glyphicon-chevron-down {
+    color: #eee; }
+  /* line 49, ../scss/main/main_screen.scss */
   #main_screen .social_media {
     width: 9%;
     margin: 0; }
-    /* line 48, ../scss/main/main_screen.scss */
+    /* line 52, ../scss/main/main_screen.scss */
     #main_screen .social_media a {
       display: inline-block;
       vertical-align: middle;
       margin: 0 15% 0 0;
       text-decoration: none; }
       @media (max-width: 767px) {
-        /* line 48, ../scss/main/main_screen.scss */
+        /* line 52, ../scss/main/main_screen.scss */
         #main_screen .social_media a {
           margin: 0 0 23%; } }
-      /* line 56, ../scss/main/main_screen.scss */
+      /* line 60, ../scss/main/main_screen.scss */
       #main_screen .social_media a:last-child {
         margin: 0; }
-    /* line 60, ../scss/main/main_screen.scss */
+    /* line 64, ../scss/main/main_screen.scss */
     #main_screen .social_media .social_btn {
-      color: #eee;
       font-size: 50px;
       font-size: 2.60vw; }
       @media (max-width: 767px) {
-        /* line 60, ../scss/main/main_screen.scss */
+        /* line 64, ../scss/main/main_screen.scss */
         #main_screen .social_media .social_btn {
           font-size: 50px;
           font-size: 4.90vw; } }
-      /* line 63, ../scss/main/main_screen.scss */
+      /* line 66, ../scss/main/main_screen.scss */
       #main_screen .social_media .social_btn:hover {
         color: grey; }
-  /* line 68, ../scss/main/main_screen.scss */
+  /* line 71, ../scss/main/main_screen.scss */
   #main_screen .mission_statement {
     width: 90%;
-    margin: 0 auto;
+    margin: 0 auto 5%;
     text-align: right;
     font-family: Merriweather;
-    color: #eee;
     font-size: 35px;
     font-size: 1.82vw; }
     @media (max-width: 767px) {
-      /* line 68, ../scss/main/main_screen.scss */
+      /* line 71, ../scss/main/main_screen.scss */
       #main_screen .mission_statement {
         font-size: 35px;
         font-size: 3.32vw; } }
+  /* line 78, ../scss/main/main_screen.scss */
+  #main_screen .glyphicon-chevron-down {
+    width: 100%;
+    font-size: 50px;
+    font-size: 2.60vw;
+    text-align: center; }
+    @media (max-width: 767px) {
+      /* line 78, ../scss/main/main_screen.scss */
+      #main_screen .glyphicon-chevron-down {
+        font-size: 50px;
+        font-size: 4.90vw; } }
+
+/* line 1, ../scss/main/intro_text.scss */
+#intro_text_section {
+  width: 100%;
+  margin: 0;
+  position: relative;
+  padding: 7% 0; }
+  /* line 6, ../scss/main/intro_text.scss */
+  #intro_text_section .overlay {
+    background: url("../img//bg_intro_text.jpg") no-repeat center/100%;
+    opacity: 0.2; }
+  /* line 10, ../scss/main/intro_text.scss */
+  #intro_text_section .intro_text {
+    width: 72%;
+    margin: 0 auto;
+    color: #222;
+    text-align: center;
+    position: relative;
+    z-index: 2; }
+    @media (max-width: 767px) {
+      /* line 10, ../scss/main/intro_text.scss */
+      #intro_text_section .intro_text {
+        width: 93%; } }
+    /* line 20, ../scss/main/intro_text.scss */
+    #intro_text_section .intro_text h1 {
+      margin: 0 0 4%;
+      font-family: 'Merriweather';
+      font-size: 62px;
+      font-size: 3.22vw; }
+      @media (max-width: 767px) {
+        /* line 20, ../scss/main/intro_text.scss */
+        #intro_text_section .intro_text h1 {
+          font-size: 62px;
+          font-size: 6.60vw; } }
+      @media (max-width: 767px) {
+        /* line 20, ../scss/main/intro_text.scss */
+        #intro_text_section .intro_text h1 {
+          font-size: 50px;
+          font-size: 2.60vw; } }
+  @media (max-width: 767px) and (max-width: 767px) {
+    /* line 20, ../scss/main/intro_text.scss */
+    #intro_text_section .intro_text h1 {
+      font-size: 50px;
+      font-size: 4.90vw; } }
+
+    /* line 28, ../scss/main/intro_text.scss */
+    #intro_text_section .intro_text p {
+      margin: 0;
+      font-family: "Open Sans";
+      font-size: 26px;
+      font-size: 1.35vw; }
+      @media (max-width: 767px) {
+        /* line 28, ../scss/main/intro_text.scss */
+        #intro_text_section .intro_text p {
+          font-size: 26px;
+          font-size: 3.8vw; } }
+      @media (max-width: 767px) {
+        /* line 28, ../scss/main/intro_text.scss */
+        #intro_text_section .intro_text p {
+          font-size: 22px;
+          font-size: 1.14vw; } }
+  @media (max-width: 767px) and (max-width: 767px) {
+    /* line 28, ../scss/main/intro_text.scss */
+    #intro_text_section .intro_text p {
+      font-size: 22px;
+      font-size: 3.47vw; } }
+
+@keyframes roll-and-enlarge {
+  50% {
+    width: 8vw;
+    height: 8vw;
+    line-height: 8vw;
+    font-size: 55px;
+    font-size: 2.86vw;
+    @media (max-width: 767px) {
+      font-size: 55px;
+      font-size: 5.90vw; } }
+  100% {
+    width: 5vw;
+    height: 5vw;
+    transform: rotate(360deg);
+    line-height: 5vw;
+    font-size: 45px;
+    font-size: 2.34vw;
+    @media (max-width: 767px) {
+      font-size: 45px;
+      font-size: 4.68vw; } } }
+/* line 19, ../scss/main/features.scss */
+#features_section {
+  width: 100%;
+  margin: 0;
+  color: #222;
+  text-align: center;
+  padding: 3% 0; }
+  @media (max-width: 767px) {
+    /* line 19, ../scss/main/features.scss */
+    #features_section {
+      padding: 6% 0; } }
+  /* line 28, ../scss/main/features.scss */
+  #features_section .section_title {
+    margin: 0 0 3%; }
+    @media (max-width: 767px) {
+      /* line 28, ../scss/main/features.scss */
+      #features_section .section_title {
+        margin-bottom: 6%; } }
+  /* line 34, ../scss/main/features.scss */
+  #features_section .features_container {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+    @media (max-width: 767px) {
+      /* line 34, ../scss/main/features.scss */
+      #features_section .features_container {
+        flex-direction: column;
+        align-items: center; } }
+    /* line 44, ../scss/main/features.scss */
+    #features_section .features_container .feature {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      @media (max-width: 767px) {
+        /* line 44, ../scss/main/features.scss */
+        #features_section .features_container .feature {
+          width: 80%;
+          margin: 0 0 5vw; } }
+      /* line 53, ../scss/main/features.scss */
+      #features_section .features_container .feature .glyphicon {
+        width: 5vw;
+        height: 5vw;
+        margin: 0 0 2.5vw;
+        border: 2px solid;
+        border-radius: 50%;
+        line-height: 5vw;
+        font-size: 45px;
+        font-size: 2.34vw; }
+        @media (max-width: 767px) {
+          /* line 53, ../scss/main/features.scss */
+          #features_section .features_container .feature .glyphicon {
+            font-size: 45px;
+            font-size: 4.68vw; } }
+        @media (max-width: 767px) {
+          /* line 53, ../scss/main/features.scss */
+          #features_section .features_container .feature .glyphicon {
+            width: 15vw;
+            height: 15vw;
+            line-height: 15vw;
+            font-size: 62px;
+            font-size: 3.22vw; } }
+  @media (max-width: 767px) and (max-width: 767px) {
+    /* line 53, ../scss/main/features.scss */
+    #features_section .features_container .feature .glyphicon {
+      font-size: 62px;
+      font-size: 6.60vw; } }
+
+        /* line 67, ../scss/main/features.scss */
+        #features_section .features_container .feature .glyphicon:hover {
+          -webkit-animation: roll-and-enlarge 2s;
+          -moz-animation: roll-and-enlarge 2s;
+          -o-animation: roll-and-enlarge 2s;
+          -ms-animation: roll-and-enlarge 2s;
+          animation: roll-and-enlarge 2s; }
+          @media (max-width: 767px) {
+            /* line 67, ../scss/main/features.scss */
+            #features_section .features_container .feature .glyphicon:hover {
+              -webkit-animation: none;
+              -moz-animation: none;
+              -o-animation: none;
+              -ms-animation: none;
+              animation: none; } }
+      /* line 74, ../scss/main/features.scss */
+      #features_section .features_container .feature .feature_title {
+        font-family: Merriweather, serif;
+        margin: 0 0 1vw;
+        font-size: 30px;
+        font-size: 1.56vw; }
+        @media (max-width: 767px) {
+          /* line 74, ../scss/main/features.scss */
+          #features_section .features_container .feature .feature_title {
+            font-size: 30px;
+            font-size: 3.72vw; } }
+      /* line 79, ../scss/main/features.scss */
+      #features_section .features_container .feature .feature_text {
+        font-family: "Open Sans", sans-serif;
+        font-size: 24px;
+        font-size: 1.25vw;
+        margin: 0; }
+        @media (max-width: 767px) {
+          /* line 79, ../scss/main/features.scss */
+          #features_section .features_container .feature .feature_text {
+            font-size: 24px;
+            font-size: 3.7vw; } }
 
 /* line 9, ../scss/main/~main.scss */
 body {
@@ -1279,7 +1486,7 @@ body {
   @media (max-width: 767px) {
     /* line 9, ../scss/main/~main.scss */
     body {
-      padding-top: 13%; } }
+      padding-top: 9%; } }
 
 /* line 17, ../scss/main/~main.scss */
 .overlay {
@@ -1288,5 +1495,17 @@ body {
   position: absolute;
   top: 0;
   left: 0; }
+
+/* line 25, ../scss/main/~main.scss */
+.section_title {
+  width: 100%;
+  font-family: 'Merriweather', serif;
+  font-size: 30px;
+  font-size: 1.56vw; }
+  @media (max-width: 767px) {
+    /* line 25, ../scss/main/~main.scss */
+    .section_title {
+      font-size: 30px;
+      font-size: 3.72vw; } }
 
 /*# sourceMappingURL=styles.css.map */
