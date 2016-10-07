@@ -1700,7 +1700,11 @@ footer {
         footer .contact_list h3 {
           font-size: 26px;
           font-size: 3.8vw; } }
-    /* line 39, ../scss/main/footer.scss */
+      @media (max-width: 767px) {
+        /* line 31, ../scss/main/footer.scss */
+        footer .contact_list h3 {
+          margin-bottom: 6%; } }
+    /* line 42, ../scss/main/footer.scss */
     footer .contact_list .contact_item {
       width: 90%;
       margin: 0 0 2% 10%;
@@ -1708,35 +1712,36 @@ footer {
       font-size: 20px;
       font-size: 1.04vw; }
       @media (max-width: 767px) {
-        /* line 39, ../scss/main/footer.scss */
+        /* line 42, ../scss/main/footer.scss */
         footer .contact_list .contact_item {
           font-size: 20px;
           font-size: 2.98vw; } }
       @media (max-width: 767px) {
-        /* line 39, ../scss/main/footer.scss */
+        /* line 42, ../scss/main/footer.scss */
         footer .contact_list .contact_item {
           font-size: 13px;
-          font-size: 0.67vw; } }
+          font-size: 0.67vw;
+          margin: 0 0 4% 0; } }
   @media (max-width: 767px) and (max-width: 767px) {
-    /* line 39, ../scss/main/footer.scss */
+    /* line 42, ../scss/main/footer.scss */
     footer .contact_list .contact_item {
       font-size: 13px;
       font-size: 2.55vw; } }
 
-      /* line 47, ../scss/main/footer.scss */
-      footer .contact_list .contact_item:nth-child(n) {
+      /* line 51, ../scss/main/footer.scss */
+      footer .contact_list .contact_item:nth-child(2n+1) {
         color: #eb5524; }
-      /* line 50, ../scss/main/footer.scss */
+      /* line 54, ../scss/main/footer.scss */
       footer .contact_list .contact_item:nth-child(2n) {
         color: #5b7db4; }
-      /* line 53, ../scss/main/footer.scss */
+      /* line 57, ../scss/main/footer.scss */
       footer .contact_list .contact_item:last-child {
         margin-bottom: 0; }
-      /* line 56, ../scss/main/footer.scss */
+      /* line 60, ../scss/main/footer.scss */
       footer .contact_list .contact_item a {
         color: inherit;
         text-decoration: none; }
-        /* line 59, ../scss/main/footer.scss */
+        /* line 63, ../scss/main/footer.scss */
         footer .contact_list .contact_item a:hover {
           text-decoration: underline; }
 

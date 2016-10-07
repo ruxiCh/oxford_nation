@@ -35,6 +35,9 @@ footer {
       color: #eee;
       font-family: Merriweather, serif;
       @include font-s26;
+      @include mobile {
+        margin-bottom: 6%;
+      }
     }
     .contact_item {
       width: 90%;
@@ -43,8 +46,9 @@ footer {
       @include font-s20;
       @include mobile {
         @include font-s13;
+        margin: 0 0 4% 0;
       }
-      &:nth-child(n) {
+      &:nth-child(2n+1) {
         color: $orange;
       }
       &:nth-child(2n) {
