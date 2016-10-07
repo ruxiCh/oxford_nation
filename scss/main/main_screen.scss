@@ -64,7 +64,7 @@
     .social_btn {
       @include font-s50;
       &:hover {
-        color: grey;
+        color: darken(lightgrey, 20%);
       }
     }
   }
@@ -74,6 +74,9 @@
     text-align: right;
     font-family: Merriweather;
     @include font-s35;
+    @include mobile {
+      margin-bottom: 3%;
+    }
   }
   .glyphicon-chevron-down {
     width: 100%;

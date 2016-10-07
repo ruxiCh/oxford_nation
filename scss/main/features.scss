@@ -21,9 +21,9 @@ $feature_icon_enlarged_size: 8vw;
   margin: 0;
   color: #222;
   text-align: center;
-  padding: 3% 0;
+  padding: 3% 0 5%;
   @include mobile {
-    padding: 6% 0;
+    padding: 8% 0;
   }
   .section_title {
     margin: 0 0 3%;

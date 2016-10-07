@@ -25,7 +25,10 @@ body {
 .section_title {
   width: 100%;
   font-family: 'Merriweather', serif;
-  @include font-s30;
-
+  @include font-s35;
+  text-align: center;
+  @include mobile {
+    @include font-s50;
+  }
 }
 

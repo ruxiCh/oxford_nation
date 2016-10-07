@@ -21,8 +21,8 @@
 						<div class="row">
 							<div class='logo_white'></div>
 							<div class="social_media">
-								<a href='https://www.facebook.com/oxfordnation'><span class='social_btn icon-facebook3'></span></a>
-								<a href='https://twitter.com/oxfordnation'><span class='social_btn icon-twitter3'></span></a>
+								<a target="_blank" href='https://www.facebook.com/oxfordnation'><span class='social_btn icon-facebook3'></span></a>
+								<a target="_blank" href='https://twitter.com/oxfordnation'><span class='social_btn icon-twitter3'></span></a>
 							</div>
 						</div>
 						<h3 class="mission_statement">We help students gain admission at the best universities in the UK</h3>
@@ -50,16 +50,24 @@
 					</div>
 				</div>
 				<div class='cta_bar options'>
-					<a href='http://www.theguardian.com/education/ng-interactive/2015/may/25/university-league-tables-2016'>
+					<div class="overlay"></div>
+					<a target="_blank" href='http://www.theguardian.com/education/ng-interactive/2015/may/25/university-league-tables-2016'>
 						<h4>Discover your options</h4>
 					</a>
 				</div>
 				<div id='testimonial_section'>
 					<h1 class="section_title">What do our students say?</h1>
 					<div class="testimonial_container">
+						<div class="controls visible-mob">
+							<div class="glyphicon glyphicon-chevron-left"></div>
+							<?php foreach($testimonials as $k=>$v):?>
+								<div class="marker <?php echo $k===0 ? "active" : "";?>" data-target="<?php echo $k +1;?>"></div>
+							<?php endforeach;?>
+							<div class="glyphicon glyphicon-chevron-right"></div>
+						</div>
 						<div class="col">
-							<?php foreach($testimonials_first_col as $v):?>
-								<div class="testimonial">
+							<?php foreach($testimonials_first_col as $k=>$v):?>
+								<div class="testimonial <?php echo $k === 0 ? "active": "";?>" data-target="<?php echo $k+1;?>">
 									<p class="testimonial_text"><?php echo $v["text"];?></p>
 									<h6 class="testimonial_author">
 										<?php echo $v["author"]?> - <a target="_blank" href="<?php echo $v["uni_link"]?>" class="author_uni"><?php echo $v["university"]?></a>
@@ -67,10 +75,10 @@
 								</div>
 							<?php endforeach;?>
 						</div>
-						<div class="separating_line"></div>
+						<div class="separating_line hidden-mob"></div>
 						<div class="col">
-							<?php foreach($testimonials_second_col as $v):?>
-								<div class="testimonial">
+							<?php foreach($testimonials_second_col as $k=>$v):?>
+								<div class="testimonial" data-target="<?php echo $k + count($testimonials_first_col) + 1 ;?>">
 									<p class="testimonial_text"><?php echo $v["text"];?></p>
 									<h6 class="testimonial_author">
 										<?php echo $v["author"]?> - <a target="_blank" href="<?php echo $v["uni_link"]?>" class="author_uni"><?php echo $v["university"]?></a>
@@ -81,13 +89,15 @@
 					</div>
 				</div>
 				<div class='cta_bar contact'>
+					<div class="overlay"></div>
 					<a target="_blank" href='https://docs.google.com/forms/d/1lcBL9xiIStyQoEAu81rF-CFdA6ZMzZHcPwYRXnK9KJc/viewform?chromeless=1&edit_requested=true'>
-						<h4>Get in touch - Call us at 0722.922.903 or <span class="visible-xs visible-sm">tap</span> <span class="visible-md visible-lg">click</span> here and we'll contact you!</h4>
+						<h4>Get in touch - Call us at 0722.922.903 or <span class="visible-tablet visible-mob">tap</span> <span class="hidden-tablet hidden-mob">click</span> here and we'll contact you!</h4>
 					</a>
 				</div>
 				<footer>
 					<div class="logo_color"></div>
 					<div class="contact_list">
+						<h3>Contact</h3>
 						<div class="contact_item contact_phone">
 							<div class="contact_icon glyphicon glyphicon-phone-alt"></div>
 							<a href='tel:+40722922903'>0722.922.903</a>

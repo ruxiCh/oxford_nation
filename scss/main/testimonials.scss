@@ -1,0 +1,93 @@
+#testimonial_section {
+  width: 100%;
+  margin: 0;
+  padding: 8% 0 10%;
+  @include mobile {
+    padding: 15% 0;
+  }
+  .section_title {
+    margin: 0 0 2%;
+    @include mobile {
+      margin-bottom: 6%;
+    }
+  }
+  .testimonial_container {
+    width: 80%;
+    margin: 0 auto;
+    height: 41vw;
+    @include mobile {
+      height: auto;
+    }
+    .controls {
+      @include mobile {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+      .glyphicon, .marker {
+        margin: 0 6% 0 0;
+        cursor: pointer;
+        &:last-child {
+          margin: 0;
+        }
+      }
+      .marker {
+        width: 2.5vw;
+        height: 2.5vw;
+        border-radius: 50%;
+        background-color: $orange;
+        &.active {
+          background-color: $blue;
+        }
+      }
+    }
+    .col, .separating_line {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 3% 0 0;
+      &:last-child {
+        margin: 0;
+      }
+    }
+    .col {
+      width: 46%;
+      padding: 1% 0;
+      @include mobile {
+        width: 100%;
+      }
+    }
+    .separating_line {
+      width: 0;
+      height: 100%;
+      border: 1px solid $orange;
+    }
+    .testimonial {
+      width: 100%;
+      margin: 0 0 3%;
+      color: #222;
+      @include font-s26;
+      @include mobile {
+        display: none;
+        opacity: 0;
+      }
+      &.active {
+        @include mobile {
+          display: block;
+          opacity: 1;
+        }
+      }
+      .testimonial_text {
+        text-align: justify;
+        font-family: "Open Sans", sans-serif;
+      }
+      .testimonial_author {
+        width: 100%;
+        text-align: right;
+        font-family: 'Merriweather', serif;
+      }
+    }
+  }
+}

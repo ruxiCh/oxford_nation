@@ -16,3 +16,16 @@
     display: none ;
   }
 }
+
+.visible-tablet {
+  display: none;
+  @include tablet {
+    display: block;
+  }
+}
+
+.hidden-tablet {
+  @include tablet {
+    display: none ;
+  }
+}
