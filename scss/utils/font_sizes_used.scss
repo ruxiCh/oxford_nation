@@ -1,9 +1,37 @@
+
+@mixin font-s62 {
+  font-size: 62px;
+  font-size: 3.22vw;
+  @include mobile{
+    font-size: 62px;
+    font-size: 6.60vw;
+  };
+}
+
+@mixin font-s55 {
+  font-size: 55px;
+  font-size: 2.86vw;
+  @include mobile{
+    font-size: 55px;
+    font-size: 5.90vw;
+  };
+}
+
 @mixin font-s50 {
   font-size: 50px;
   font-size: 2.60vw;
   @include mobile{
     font-size: 50px;
     font-size: 4.90vw;
+  };
+}
+
+@mixin font-s45 {
+  font-size: 45px;
+  font-size: 2.34vw;
+  @include mobile{
+    font-size: 45px;
+    font-size: 4.68vw;
   };
 }
 
@@ -16,11 +44,58 @@
   };
 }
 
+@mixin font-s30 {
+  font-size: 30px;
+  font-size: 1.56vw;
+  @include mobile{
+    font-size: 30px;
+    font-size: 3.72vw;
+  };
+}
+
+@mixin font-s26 {
+  font-size: 26px;
+  font-size: 1.35vw;
+  @include mobile{
+    font-size: 26px;
+    font-size: 3.8vw;
+  };
+}
+
 @mixin font-s24 {
   font-size: 24px;
   font-size: 1.25vw;
   @include mobile{
     font-size: 24px;
     font-size: 3.7vw;
+  };
+}
+
+
+@mixin font-s22 {
+  font-size: 22px;
+  font-size: 1.14vw;
+  @include mobile{
+    font-size: 22px;
+    font-size: 3.47vw;
+  };
+}
+
+@mixin font-s20 {
+  font-size: 20px;
+  font-size: 1.04vw;
+  @include mobile{
+    font-size: 20px;
+    font-size: 2.98vw;
+  };
+}
+
+
+@mixin font-s13 {
+  font-size: 13px;
+  font-size: 0.67vw;
+  @include mobile{
+    font-size: 13px;
+    font-size: 2.55vw;
   };
 }

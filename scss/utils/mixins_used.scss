@@ -3,3 +3,28 @@
     @content;
   }
 }
+
+@mixin tablet{
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    @content;
+  }
+
+}
+
+
+@mixin animation($arguments) {
+  -webkit-animation: $arguments;
+  -moz-animation: $arguments;
+  -o-animation: $arguments;
+  -ms-animation: $arguments;
+  animation: $arguments;
+}
+
+@mixin transition($arguments) {
+  -webkit-transition: $arguments;
+  -moz-transition: $arguments;
+  -o-transition: $arguments;
+  -ms-transition: $arguments;
+  transition: $arguments;
+}
