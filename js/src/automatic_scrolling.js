@@ -8,19 +8,20 @@ var contactBar = $(".cta_bar.contact");
 var downArrow = $("#main_screen .glyphicon-chevron-down");
 var introTextSection = $("#intro_text_section");
 
+
 applyNowBtn.click(function(e) {
+	scrollTo(contactBar, 0);
 	e.preventDefault();
-	smoothScroll(contactBar, 0);
 });
 
 downArrow.click(function() {
-	smoothScroll(introTextSection, 50);
+	scrollTo(introTextSection, 50);
 });
 
-//Smooth scrolling function
+//Automatic scrolling function
 
-function smoothScroll(target, diffIfFixedNav) {
-	$('body').animate({scrollTop: target.offset().top - diffIfFixedNav}, 1000);
+function scrollTo(target, diffIfFixedNav) {
+	$("html, body").animate({scrollTop: target.offset().top - diffIfFixedNav}, 1000);
 	
 }
 

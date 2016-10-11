@@ -13,7 +13,7 @@
 						<h1 class='sr-only'>Oxford Nation</h1>
                         <nav>
                             <a class="nav_link" target="_blank" href='http://ask.fm/OxfordNation'>Ask Us</a>
-                            <a class="nav_link bold" href='#contact-form'>Apply Now!</a>
+                            <a class="nav_link bold" href=''>Apply Now!</a>
                         </nav>
 				</header>
 				<div id='main_screen'>

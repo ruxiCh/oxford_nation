@@ -1678,7 +1678,7 @@ footer {
   width: 100%;
   margin: 0;
   background-color: #222;
-  padding: 0 0 2%;
+  padding: 2% 0;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1693,12 +1693,12 @@ footer {
     width: 23%;
     margin: 0 15% 0 0;
     background: url("../img//logo_color.png") no-repeat center/100%;
-    padding-top: 10%; }
+    padding-top: 5vw; }
     @media (max-width: 767px) {
       /* line 14, ../scss/main/footer.scss */
       footer .logo_color {
         width: 45%;
-        padding-top: 15%;
+        padding-top: 11vw;
         margin: 0; } }
   /* line 25, ../scss/main/footer.scss */
   footer .contact_list {
