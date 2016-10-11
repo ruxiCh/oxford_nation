@@ -1294,7 +1294,8 @@ header {
     width: 100%;
     font-size: 50px;
     font-size: 2.60vw;
-    text-align: center; }
+    text-align: center;
+    cursor: pointer; }
     @media (max-width: 767px) {
       /* line 81, ../scss/main/main_screen.scss */
       #main_screen .glyphicon-chevron-down {
@@ -1501,32 +1502,40 @@ header {
   margin: 0;
   position: relative;
   background: url("../img//bg_cta.jpg") no-repeat center/100%;
-  height: 5vw; }
+  height: 5vw;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease; }
   @media (max-width: 767px) {
     /* line 1, ../scss/main/cta_bar.scss */
     .cta_bar {
       height: 8vw; }
-      /* line 9, ../scss/main/cta_bar.scss */
+      /* line 10, ../scss/main/cta_bar.scss */
       .cta_bar.contact {
         height: 13vw; } }
-  /* line 13, ../scss/main/cta_bar.scss */
+  /* line 14, ../scss/main/cta_bar.scss */
+  .cta_bar.glowy {
+    text-shadow: 5px 5px 1.5em #eee, 5px -5px 1.5em #fff,  -5px 5px 1.5em #eee, -5px -5px 1.5em #fff; }
+  /* line 17, ../scss/main/cta_bar.scss */
   .cta_bar .overlay {
     background-color: black;
     opacity: 0.5; }
-  /* line 17, ../scss/main/cta_bar.scss */
+  /* line 21, ../scss/main/cta_bar.scss */
   .cta_bar a {
     display: block;
     width: 100%;
     height: 100%;
     position: relative;
-    z-index: 3;
+    z-index: 2;
     text-decoration: none;
     color: #eee;
     padding-top: 1.5%; }
-    /* line 29, ../scss/main/cta_bar.scss */
+    /* line 33, ../scss/main/cta_bar.scss */
     .cta_bar a:hover {
       color: #a0a0a0; }
-    /* line 32, ../scss/main/cta_bar.scss */
+    /* line 36, ../scss/main/cta_bar.scss */
     .cta_bar a h4 {
       width: 100%;
       margin: 0;
@@ -1535,16 +1544,16 @@ header {
       font-size: 30px;
       font-size: 1.56vw; }
       @media (max-width: 767px) {
-        /* line 32, ../scss/main/cta_bar.scss */
+        /* line 36, ../scss/main/cta_bar.scss */
         .cta_bar a h4 {
           font-size: 30px;
           font-size: 3.72vw; } }
       @media (min-width: 768px) and (max-width: 1024px) {
-        /* line 38, ../scss/main/cta_bar.scss */
+        /* line 42, ../scss/main/cta_bar.scss */
         .cta_bar a h4 .visible-tablet {
           display: inline; } }
       @media (max-width: 767px) {
-        /* line 38, ../scss/main/cta_bar.scss */
+        /* line 42, ../scss/main/cta_bar.scss */
         .cta_bar a h4 .visible-tablet {
           display: inline; } }
 
@@ -1564,62 +1573,72 @@ header {
       /* line 8, ../scss/main/testimonials.scss */
       #testimonial_section .section_title {
         margin-bottom: 6%; } }
-  /* line 14, ../scss/main/testimonials.scss */
+  @media (max-width: 767px) {
+    /* line 14, ../scss/main/testimonials.scss */
+    #testimonial_section .controls {
+      width: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; } }
+  /* line 23, ../scss/main/testimonials.scss */
+  #testimonial_section .controls .glyphicon, #testimonial_section .controls .marker {
+    margin: 0 6% 0 0;
+    cursor: pointer; }
+    /* line 26, ../scss/main/testimonials.scss */
+    #testimonial_section .controls .glyphicon:last-child, #testimonial_section .controls .marker:last-child {
+      margin: 0; }
+  /* line 30, ../scss/main/testimonials.scss */
+  #testimonial_section .controls .marker {
+    width: 2.5vw;
+    height: 2.5vw;
+    border-radius: 50%;
+    background-color: #eb5524; }
+    /* line 35, ../scss/main/testimonials.scss */
+    #testimonial_section .controls .marker.active {
+      background-color: #253651; }
+  /* line 40, ../scss/main/testimonials.scss */
   #testimonial_section .testimonial_container {
     width: 80%;
     margin: 0 auto;
-    height: 41vw; }
+    height: 41vw;
+    -webkit-transition: all 1.5s ease;
+    -moz-transition: all 1.5s ease;
+    -o-transition: all 1.5s ease;
+    -ms-transition: all 1.5s ease;
+    transition: all 1.5s ease; }
     @media (max-width: 767px) {
-      /* line 14, ../scss/main/testimonials.scss */
+      /* line 40, ../scss/main/testimonials.scss */
       #testimonial_section .testimonial_container {
-        height: auto; } }
-    @media (max-width: 767px) {
-      /* line 21, ../scss/main/testimonials.scss */
-      #testimonial_section .testimonial_container .controls {
-        width: 100%;
-        margin: 0;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center; } }
-    /* line 30, ../scss/main/testimonials.scss */
-    #testimonial_section .testimonial_container .controls .glyphicon, #testimonial_section .testimonial_container .controls .marker {
-      margin: 0 6% 0 0;
-      cursor: pointer; }
-      /* line 33, ../scss/main/testimonials.scss */
-      #testimonial_section .testimonial_container .controls .glyphicon:last-child, #testimonial_section .testimonial_container .controls .marker:last-child {
-        margin: 0; }
-    /* line 37, ../scss/main/testimonials.scss */
-    #testimonial_section .testimonial_container .controls .marker {
-      width: 2.5vw;
-      height: 2.5vw;
-      border-radius: 50%;
-      background-color: #eb5524; }
-      /* line 42, ../scss/main/testimonials.scss */
-      #testimonial_section .testimonial_container .controls .marker.active {
-        background-color: #253651; }
-    /* line 47, ../scss/main/testimonials.scss */
+        height: auto;
+        position: relative;
+        padding-top: 44%; } }
+    /* line 51, ../scss/main/testimonials.scss */
     #testimonial_section .testimonial_container .col, #testimonial_section .testimonial_container .separating_line {
       display: inline-block;
       vertical-align: middle;
       margin: 0 3% 0 0; }
-      /* line 51, ../scss/main/testimonials.scss */
+      /* line 55, ../scss/main/testimonials.scss */
       #testimonial_section .testimonial_container .col:last-child, #testimonial_section .testimonial_container .separating_line:last-child {
         margin: 0; }
-    /* line 55, ../scss/main/testimonials.scss */
+    /* line 59, ../scss/main/testimonials.scss */
     #testimonial_section .testimonial_container .col {
       width: 46%;
       padding: 1% 0; }
       @media (max-width: 767px) {
-        /* line 55, ../scss/main/testimonials.scss */
+        /* line 59, ../scss/main/testimonials.scss */
         #testimonial_section .testimonial_container .col {
-          width: 100%; } }
-    /* line 62, ../scss/main/testimonials.scss */
+          width: 100%;
+          position: absolute;
+          top: 0;
+          left: 0; } }
+    /* line 69, ../scss/main/testimonials.scss */
     #testimonial_section .testimonial_container .separating_line {
       width: 0;
       height: 100%;
       border: 1px solid #eb5524; }
-    /* line 67, ../scss/main/testimonials.scss */
+    /* line 74, ../scss/main/testimonials.scss */
     #testimonial_section .testimonial_container .testimonial {
       width: 100%;
       margin: 0 0 3%;
@@ -1627,25 +1646,28 @@ header {
       font-size: 26px;
       font-size: 1.35vw; }
       @media (max-width: 767px) {
-        /* line 67, ../scss/main/testimonials.scss */
+        /* line 74, ../scss/main/testimonials.scss */
         #testimonial_section .testimonial_container .testimonial {
           font-size: 26px;
           font-size: 3.8vw; } }
       @media (max-width: 767px) {
-        /* line 67, ../scss/main/testimonials.scss */
+        /* line 74, ../scss/main/testimonials.scss */
         #testimonial_section .testimonial_container .testimonial {
+          position: absolute;
+          top: 0;
+          left: 0;
           display: none;
           opacity: 0; } }
       @media (max-width: 767px) {
-        /* line 76, ../scss/main/testimonials.scss */
+        /* line 86, ../scss/main/testimonials.scss */
         #testimonial_section .testimonial_container .testimonial.active {
           display: block;
           opacity: 1; } }
-      /* line 82, ../scss/main/testimonials.scss */
+      /* line 92, ../scss/main/testimonials.scss */
       #testimonial_section .testimonial_container .testimonial .testimonial_text {
         text-align: justify;
         font-family: "Open Sans", sans-serif; }
-      /* line 86, ../scss/main/testimonials.scss */
+      /* line 96, ../scss/main/testimonials.scss */
       #testimonial_section .testimonial_container .testimonial .testimonial_author {
         width: 100%;
         text-align: right;

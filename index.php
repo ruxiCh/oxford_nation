@@ -57,14 +57,15 @@
 				</div>
 				<div id='testimonial_section'>
 					<h1 class="section_title">What do our students say?</h1>
+					<div class="controls visible-mob">
+						<div class="glyphicon glyphicon-chevron-left"></div>
+						<?php foreach($testimonials as $k=>$v):?>
+							<div class="marker <?php echo $k===0 ? "active" : "";?>" data-target="<?php echo $k +1;?>"></div>
+						<?php endforeach;?>
+						<div class="glyphicon glyphicon-chevron-right"></div>
+					</div>
 					<div class="testimonial_container">
-						<div class="controls visible-mob">
-							<div class="glyphicon glyphicon-chevron-left"></div>
-							<?php foreach($testimonials as $k=>$v):?>
-								<div class="marker <?php echo $k===0 ? "active" : "";?>" data-target="<?php echo $k +1;?>"></div>
-							<?php endforeach;?>
-							<div class="glyphicon glyphicon-chevron-right"></div>
-						</div>
+
 						<div class="col">
 							<?php foreach($testimonials_first_col as $k=>$v):?>
 								<div class="testimonial <?php echo $k === 0 ? "active": "";?>" data-target="<?php echo $k+1;?>">
@@ -108,5 +109,6 @@
 						</div>
 					</div>
 				</footer>
+				<script src="js/scripts.min.js"></script>
 		</body>
 	</html>

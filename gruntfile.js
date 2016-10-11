@@ -17,10 +17,21 @@ module.exports = function(grunt) {
                 }
             }
         },
+        uglify: {
+            my_target: {
+                files: {
+                    'js/scripts.min.js': ['node_modules/jquery/dist/jquery.min.js', 'node_modules/gsap/src/minified/TweenMax.min.js', 'js/src/*.js']
+                }
+            }
+        },
         watch: {
             css: {
                 files: 'scss/*/*.scss',
                 tasks: ['sass', 'cssmin']
+            },
+            scripts: {
+                files: 'js/src/*.js',
+                tasks: ['uglify']
             }
         }
     });
@@ -28,6 +39,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks("grunt-contrib-sass");
     grunt.loadNpmTasks("grunt-contrib-watch");
     grunt.loadNpmTasks("grunt-contrib-cssmin");
+    grunt.loadNpmTasks("grunt-contrib-uglify");
 
     grunt.registerTask('default', ['watch']);
 };

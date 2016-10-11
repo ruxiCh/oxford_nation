@@ -11,39 +11,43 @@
       margin-bottom: 6%;
     }
   }
+  .controls {
+    @include mobile {
+      width: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+    .glyphicon, .marker {
+      margin: 0 6% 0 0;
+      cursor: pointer;
+      &:last-child {
+        margin: 0;
+      }
+    }
+    .marker {
+      width: 2.5vw;
+      height: 2.5vw;
+      border-radius: 50%;
+      background-color: $orange;
+      &.active {
+        background-color: $blue;
+      }
+    }
+  }
   .testimonial_container {
     width: 80%;
     margin: 0 auto;
     height: 41vw;
+    @include transition(all 1.5s ease);
     @include mobile {
       height: auto;
+      position: relative;
+      padding-top: 44%;
     }
-    .controls {
-      @include mobile {
-        width: 100%;
-        margin: 0;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-      }
-      .glyphicon, .marker {
-        margin: 0 6% 0 0;
-        cursor: pointer;
-        &:last-child {
-          margin: 0;
-        }
-      }
-      .marker {
-        width: 2.5vw;
-        height: 2.5vw;
-        border-radius: 50%;
-        background-color: $orange;
-        &.active {
-          background-color: $blue;
-        }
-      }
-    }
+
     .col, .separating_line {
       display: inline-block;
       vertical-align: middle;
@@ -57,6 +61,9 @@
       padding: 1% 0;
       @include mobile {
         width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
       }
     }
     .separating_line {
@@ -70,6 +77,9 @@
       color: #222;
       @include font-s26;
       @include mobile {
+        position: absolute;
+        top: 0;
+        left: 0;
         display: none;
         opacity: 0;
       }
