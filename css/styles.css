@@ -1525,17 +1525,18 @@ header {
   /* line 21, ../scss/main/cta_bar.scss */
   .cta_bar a {
     display: block;
-    width: 100%;
+    width: 95%;
+    margin: 0 auto;
     height: 100%;
     position: relative;
     z-index: 2;
     text-decoration: none;
     color: #eee;
     padding-top: 1.5%; }
-    /* line 33, ../scss/main/cta_bar.scss */
+    /* line 34, ../scss/main/cta_bar.scss */
     .cta_bar a:hover {
       color: #a0a0a0; }
-    /* line 36, ../scss/main/cta_bar.scss */
+    /* line 37, ../scss/main/cta_bar.scss */
     .cta_bar a h4 {
       width: 100%;
       margin: 0;
@@ -1544,16 +1545,16 @@ header {
       font-size: 30px;
       font-size: 1.56vw; }
       @media (max-width: 767px) {
-        /* line 36, ../scss/main/cta_bar.scss */
+        /* line 37, ../scss/main/cta_bar.scss */
         .cta_bar a h4 {
           font-size: 30px;
           font-size: 3.72vw; } }
       @media (min-width: 768px) and (max-width: 1024px) {
-        /* line 42, ../scss/main/cta_bar.scss */
+        /* line 43, ../scss/main/cta_bar.scss */
         .cta_bar a h4 .visible-tablet {
           display: inline; } }
       @media (max-width: 767px) {
-        /* line 42, ../scss/main/cta_bar.scss */
+        /* line 43, ../scss/main/cta_bar.scss */
         .cta_bar a h4 .visible-tablet {
           display: inline; } }
 

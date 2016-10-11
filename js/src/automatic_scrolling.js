@@ -31,7 +31,7 @@ function scrollTo(target, diffIfFixedNav) {
 
 $(window).scroll(function(){
 	if($(window).scrollTop() + $(window).height() == $(document).height()) {
-		contactBar.addClass('glowy');
+		//contactBar.addClass('glowy');
 	} else {
 		 contactBar.removeClass('glowy');
 }});
